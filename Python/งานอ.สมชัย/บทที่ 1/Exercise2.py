@@ -1,6 +1,0 @@
-print ("Id : 69-060216-1201-0")
-print ("English Name : Possawee Jindaprasert")
-print ("Thai Name : พศวีร์ จินดาประเสริฐ")
-print ("Nick Name : Best")
-print ("Sex : Male")
-print ("Age : 18")
