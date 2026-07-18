@@ -1,8 +1,8 @@
 # เจาะลึก string
-# fname="วราเมธ"
-# lname="นิมา"
+# fname="เบศร"
+# lname="จินดา"
 
-# fullname=fname+lname+" อรกัญญา"
+# fullname=fname+lname+" หล่อไป"
 # print(fullname)
 
 # adress="""
@@ -24,8 +24,8 @@
 # print(age)
 # print(data)
 
-# text="HelloPython"
-# print(text[3:7]) 
+text="HelloPython"
+print(text[3:7]) 
 
 # ฟังก์ชันจัดการสตริง
 # print(name.startswith("นาย")) #upperพิมพ์ใหญ่/lowerพิมพ์เล็ก startswithตรวจสอบว่าข้อความขึ้นต้นด้วยคำที่กำหนดหรือไม่/endswithตรวจสอบว่าข้อความลงท้ายด้วยคำที่กำหนดหรือไม่
