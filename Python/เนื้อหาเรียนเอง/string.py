@@ -24,12 +24,12 @@
 # print(age)
 # print(data)
 
-text="HelloPython"
-print(text[3:7]) 
+# text="HelloPython"
+# print(text[3:7]) 
 
 # ฟังก์ชันจัดการสตริง
 # print(name.startswith("นาย")) #upperพิมพ์ใหญ่/lowerพิมพ์เล็ก startswithตรวจสอบว่าข้อความขึ้นต้นด้วยคำที่กำหนดหรือไม่/endswithตรวจสอบว่าข้อความลงท้ายด้วยคำที่กำหนดหรือไม่
-# name="นายวราเมธ นิมา"
+# name="นายพศวีร์ จินดาประเสริฐ"
 # name=input("ป้อนชื่อของคุณ: ")
 # if name.startswith("นาย"):
 #     print("เป็นเพศชาย")
@@ -58,5 +58,5 @@ print(text[3:7])
 # print(len(text))
 
 #format จัดรูปแบบข้อความ
-text="ฉันชื่อ {} อายุ {} ปี".format("วราเมธ","18")
+text="ฉันชื่อ {} อายุ {} ปี".format("เบศร","18")
 print(text)  
