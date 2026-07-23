@@ -17,4 +17,3 @@ sum=num1+num2+num3+num4
 print()
 print("The digits are: ",num1, num2, num3, num4)
 print("The sum of the digits is :",sum)
-# print(f"The digits are: {num1} {num2} {num3} {num4}")
