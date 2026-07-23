@@ -1,4 +1,4 @@
-n=int(input("Enter a number : "))
+n=int(input("Enter a number: "))
 
 num1=n//1000
 n=n%1000
@@ -16,4 +16,4 @@ sum=num1+num2+num3+num4
 
 print()
 print("The digits are: ",num1, num2, num3, num4)
-print("The sum of the digits is :",sum)
+print("The sum of the digits is:",sum)

@@ -6,5 +6,5 @@ time=int(input("Enter the time in hours: "))
 km3=km2-km
 km=km3/time
 print()
-print("The distance is : ", km3,"km")
+print("The distance is: ", km3,"km")
 print("The average speed is: ", km, "km/h")

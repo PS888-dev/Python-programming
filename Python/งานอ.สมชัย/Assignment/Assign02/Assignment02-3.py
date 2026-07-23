@@ -1,3 +1,3 @@
-number=int(input("Enter a binary number : "))
+number=int(input("Enter a binary number: "))
 print()
-print("The decimal number :",int(str(number), 2))
+print("The decimal number:",int(str(number), 2))
