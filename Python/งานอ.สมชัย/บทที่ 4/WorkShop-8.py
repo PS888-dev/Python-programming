@@ -3,6 +3,7 @@ score = 1
 count = 0
 while score > 0:
     score = int(input("Enter score value  #" + str(count + 1) +  " : "))
+    # score = int(input(f"Enter score value  #{count + 1} : "))
     if score > 0:
         count += 1
         total += score
