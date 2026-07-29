@@ -1,10 +1,12 @@
 #list
 # product=["กางเกง",99.99,10,True]
+# # product=list(("กางเกง",99.99,10,True))
 
-#แก้ไขข้อมูลใน list
+# # แก้ไขข้อมูลใน list
 # product[0]="เสื้อ"
 # product[1]=250
-#เข้าถึงสมาชิก
+# # เข้าถึงสมาชิก
+# print(product[0]) #เข้าถึงสมาชิกใน list แบบระบุตำแหน่ง
 # print(product)
 
 # colors1=["ดำ","แดง","เขียว","ดำ"]
@@ -12,10 +14,10 @@
 # fullcolors=colors1+colors2
 # print(fullcolors)
 
-# colors=["แดง","เขียว","น้ำเงิน","ดำ","ขาว"]
-# colors.sort() #เรียงลำดับสมาชิกใน list
-# colors.reverse() #เรียงลำดับสมาชิกใน list แบบย้อนกลับ
-# print(colors)
+colors=["แดง","เขียว","น้ำเงิน","ดำ","ขาว"]
+colors.sort() #เรียงลำดับสมาชิกใน list
+colors.reverse() #เรียงลำดับสมาชิกใน list แบบย้อนกลับ
+print(colors)
 # colors.append("น้ำตาล") #เพิ่มสมาชิกใน list ตัวเดียว
 # colors.extend(["ส้ม","เหลือง",]) #เพิ่มสมาชิกใน list แบบหลายตัว
 # colors.insert(1,"เทา") #เพิ่มสมาชิกใน list แบบระบุตำแหน่ง
