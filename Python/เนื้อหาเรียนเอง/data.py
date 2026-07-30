@@ -14,10 +14,14 @@
 # fullcolors=colors1+colors2
 # print(fullcolors)
 
-colors=["แดง","เขียว","น้ำเงิน","ดำ","ขาว"]
-colors.sort() #เรียงลำดับสมาชิกใน list
-colors.reverse() #เรียงลำดับสมาชิกใน list แบบย้อนกลับ
-print(colors)
+# number = ["50,20,10,23,160"]
+# colors=["แดง","เขียว","น้ำเงิน","ดำ","ขาว"]
+# colors.sort() #เรียงลำดับสมาชิกใน list
+# number.sort() #เรียงลำดับสมาชิกใน list
+# colors.reverse() #เรียงลำดับสมาชิกใน list แบบย้อนกลับ
+# number.reverse() #เรียงลำดับสมาชิกใน list แบบย้อนกลับ
+# print(colors)
+# print(number)
 # colors.append("น้ำตาล") #เพิ่มสมาชิกใน list ตัวเดียว
 # colors.extend(["ส้ม","เหลือง",]) #เพิ่มสมาชิกใน list แบบหลายตัว
 # colors.insert(1,"เทา") #เพิ่มสมาชิกใน list แบบระบุตำแหน่ง
@@ -25,56 +29,35 @@ print(colors)
 # colors.clear()  #ลบสมาชิกใน list แบบลบทั้งหมด
 #print(colors.count("แดง")) #นับจำนวนสมาชิกใน list
 
-#tuple แก้ไขข้อมูลไม่ได้
-# colors1=("แดง","เขียว","น้ำเงิน")
-# colors2=tuple(("ดำ","ขาว"))
+# tuple ไม่สามารถเเก้ไขข้อมูลได่
+# product=("กางเกง",150.0,10)
+# name,price,stock, = product
+# # print(type(product))
+# print(name)
+# print(price)
+# print(stock)
+
+# colors = ("เเดง","เขียว","น้ำเงิน","ดำ","ขาว")
+# colors2 =tuple(("ดำ","ขาว"))
 
 # fullcolors=colors1+colors2
-# print(fullcolors*2) #การคูณ tuple จะทำให้สมาชิกใน tuple ซ้ำตามจำนวนที่กำหนด
+# print(type(fullcolors))
+# print(fullcolors)
+# print(colors[0:])
+# print(colors.index("ดำ")) #หาข้อมูลสมาชิกในข้อมูล
+# print(colors.count("เเดง")) #หาว่ามีข้อมูลกี่ตัว
 
-# colors=("แดง","เขียว","น้ำเงิน","ดำ","ขาว")
-# print(colors[1:3])
- 
-#set ข้อมูลไม่ซ้ำกัน และไม่มีลำดับ แก้ไขข้อมูลไม่ได้ ไม่เรียงลำดับ
-animals={"หมา","แมว","สิงโต","เสือ","ช้าง"}
-# print("หมา" in animals) #ตรวจสอบว่ามีสมาชิกใน set หรือไม่
-animals.add("เป็ด") #เพิ่มสมาชิกใน set ตัวเดียว
-animals.update(("หมู","ยีราฟ")) #เพิ่มสมาชิกใน set แบบหลายตัว
+# set ต้องมีต่าไม่ซ้ำกัน มีลำดับไม่ชัดเจน
+animals = {"หมา","เเมว","สิงโต","เสือ"}
+animals.add("เป็ด") #ต้องการเพิ่มเข้าไปในsetเเบบเดี่ยว
+animals.update("ปลา","ลิง") #ต้องการเพิ่มเข้าไปในsetเเบบหลายอัน
 
-# pet=set(("หมา","แมว","กระต่าย","เม่น"))
-# print(animals)
-# print(pet)
+pet=set(("หมา","เเมว","เม่น","กระต่าย"))
+print(pet)
+print(animals)
+# print("หมา" in animals) #หาว่ามีค่าในsetหรื่อไม่
 
-# data=animals.union(pet) #union รวมสมาชิกใน set ทั้งสองแบบไม่ซ้ำกัน
-# print(data)
-
-# data=animals.intersection(pet) #intersection หาสมาชิกที่ซ้ำกันใน set ทั้งสอง
-# print(data)
-
-# data=animals.difference(pet) #difference หาสมาชิกที่ไม่ซ้ำกันใน set ทั้งสอง
-# print(data)
-
-#dictionary ข้อมูลแบบคู่คีย์-ค่า แก้ไขข้อมูลได้ ไม่มีลำดับ 
-colors={
-    "red":"แดง",
-    "green":"เขียว",
-    "blue":"น้ำเงิน"
-    }
-# colors["yellow"]="เหลือง" #เพิ่มสมาชิกใน dictionary
-# colors["blue"]="คราม"   #แก้ไขข้อมูลใน dictionary แบบระบุคีย์
-
-
-print(colors.keys()) #แสดงคีย์ใน dictionary
-print(colors.values()) #แสดงค่าใน dictionary
-print(colors.items()) #แสดงคู่คีย์-ค่าใน dictionary
-
-# print(colors["red"]) #ทำงานเหมือนกันกับอันล่าง
-# print(colors.get("red")) #เข้าถึงค่าของคีย์ใน dictionary แบบระบุคีย์
-maincolors=colors.copy() #คัดลอก dictionary ก่อนแก้ไขข้อมูล
-# colors.pop("blue") #ลบสมาชิกใน dictionary แบบระบุคีย์
-# colors.clear() #ลบสมาชิกใน dictionary แบบลบทั้งหมด
-# colors.update({"yellow":"เหลือง","pink":"ชมพู"}) #เพิ่มสมาชิกใน dictionary แบบหลายตัว
-# colors.update({"red":"แดงเข้ม"}) #แก้ไขข้อมูลใน dictionary แบบระบุคีย์
-
-# print(colors)
-# print(maincolors) 
+data=animals.union(pet) #การเอาสมาชิกทุกตัวมารวมกัน
+data=animals.intersection(pet) #การเอาสมาชิกเหมือนกันมาใช้
+data=animals.difference(pet) #set ใช้สำหรับ หาสมาชิกที่มีอยู่ในเซตแรก แต่ไม่มีอยู่ในเซตที่สอง
+print(data)
