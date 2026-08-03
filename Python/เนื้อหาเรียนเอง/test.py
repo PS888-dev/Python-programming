@@ -6,7 +6,7 @@ if income <= 500000:
     tax1=income*tax1
     print(f"เสียภาษี :{tax1}\nรายได้บริสุทธ์ :{income-tax1}")
 
-elif income >=500000:
+elif income > 500000:
     tax1=income*tax2
     print(f"เสียภาษี :{tax1}\nรายได้บริสุทธ์ :{income-tax1}")
 print("*"*20)

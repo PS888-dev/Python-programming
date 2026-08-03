@@ -1,7 +1,12 @@
 number1 = int(input("กรอกค่าตัวเลขที่ 1 :"))
 number2 = int(input("กรอกค่าตัวเลขที่ 2 :"))
 
-print(f"ผลบวก = {number1+number2}")
-print(f"ผลลบ = {number1-number2}")
-print(f"ผลคูณ = {number1*number2}")
-print(f"ผลหาร = {number1/number2}")
+sum=number1+number2
+diff=number1-number2
+pro=number1*number2
+quo=number1/number2
+
+print(f"ผลบวก = {sum}")
+print(f"ผลลบ = {diff}")
+print(f"ผลคูณ = {pro}")
+print(f"ผลหาร = {quo}")
