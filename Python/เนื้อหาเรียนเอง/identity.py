@@ -9,5 +9,5 @@ print(colorsA is data)
 #membership operator
 colors=["สีแดง","สีเขียว","สีน้ำเงิน"]
 # in = มีอยู่ not in = ไม่มี
-print("สีแดง" in colors)
-print("สีดำ" not in colors)
+print("สีแดง" in colors) #เป็นสมาชิกมั้ย
+print("สีดำ" not in colors) #ไม่ได้เป็นสมาชิกมั้ย
