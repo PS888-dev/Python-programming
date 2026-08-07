@@ -6,6 +6,7 @@ print(f"| No. |{" "*6}Name Subject{" "*6} | Socre | Grade | Level | Credit | Poi
 for i in range(1,6,+1):
     subject = input(f"วิชา : ")
     score = int(input(f"คะเเนน : "))
+    credit = int(input(f"หน่วยกิต : "))
     i += 1
     
     if score >= 80 and score <= 100 :print("A")
