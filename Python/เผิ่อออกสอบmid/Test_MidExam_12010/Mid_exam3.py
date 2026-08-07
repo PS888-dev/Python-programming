@@ -4,11 +4,11 @@ print(f"{"="*74}")
 print(f"| No. |{" "*6}Name Subject{" "*6} | Socre | Grade | Level | Credit | Point |")
 
 for i in range(1,6,+1):
-    subject = input(f"|  {i}  |")
+    subject = input(f"วิชา : ")
     score = int(input(f"คะเเนน : "))
     i += 1
     
-    if score >= 80 and score <= 100 :Grade=("A")
+    if score >= 80 and score <= 100 :print("A")
     elif score >= 75 and score <= 79:print("B+")
     elif score >= 70 and score <= 74:print("B")
     elif score >= 65 and score <= 69:print("C+")
