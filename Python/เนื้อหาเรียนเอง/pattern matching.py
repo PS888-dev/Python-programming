@@ -1,3 +1,39 @@
+#Leiteral Pattern ง่ายที่สุด เป็นการกำหนดในตัวเเปร ตัวเเปรค่าคงที่
+# service = None
+# match service:
+#     case 1:
+#         print("ฝากเงิน")
+#     case 2:
+#         print("ยอดเงินคงเหลือ")
+#     case 3:
+#         print("สอบถามยอดเงินคงเหลือ")
+#     case None:
+#         print("ข้อมูลไม่ถูกต้อง")
+
+#Wildcard Pattern กำหนดเงื่อนไขไม่ตรงกับเงือนไขใดเลย
+# service = 100
+# match service:
+#     case 1:
+#         print("ฝากเงิน")
+#     case 2:
+#         print("ยอดเงินคงเหลือ")
+#     case 3:
+#         print("สอบถามยอดเงินคงเหลือ")
+#     case _:#กรณีที่ค่าตัวแปรไม่ตรงกับค่าคงที่ที่กำหนดไว้
+        # print("ข้อมูลไม่ถูกต้อง")
+
+#Capture Pattern นำเอาช้อมูลมาเเจกเเจงรายระเอียด ค่าไม่ตรงกับอะไรเลย
+# service = 0
+# match service:
+#     case 1:
+#         print("ฝากเงิน")
+#     case 2:
+#         print("ยอดเงินคงเหลือ")
+#     case 3:
+#         print("สอบถามยอดเงินคงเหลือ")
+#     case service: #ถ้าไม่ตรงวิ่งมาตรงนี้
+#         print(f"ไม่มีบริการหมายเลข {service} ในระบบ")
+
 
 #Guard Filter การนำ match case statement ร่วมกับ if statement เพื่อกำหนดเงื่อนไขในการทำงาน
 #100 = สอบได้คะแนนเต็ม , 50-99 = ผ่านเกณฑ์การสอบวัดผล
@@ -10,13 +46,14 @@
 #         print("ผ่านเกณฑ์การสอบวัดผล")
 #     case score if score>=0 and score<=49 : #ทำเอง ที่สอนใช้ case score _ : print("คะแนนไม่ได้อยู่ในเกณฑ์ที่กำหนด")
 #         print("สอบไม่ผ่าน")
-#     case score if score<0 or score>100 :
+#     # case score if score<0 or score>100 : #ยาว
+#     #     print("กรอกคะแนนไม่ถูกต้อง")
+#     case _ : #สั้น
 #         print("กรอกคะแนนไม่ถูกต้อง")
-
-
-#OR Pattern | แทน or
+        
+        
+#OR Pattern | แทน or เพิ่มเติม or ใช้สำหรับ if statement 
 # data = input("ป้อนคำนำหน้าชื่อของคุณ:")
-
 # match data:
 #     case "เด็กชาย" | "นาย" :
 #         print("เป็นเพศชาย")
