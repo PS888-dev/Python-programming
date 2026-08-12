@@ -25,8 +25,3 @@
 # print("ตัวเลขของคุณ คือ ",number)
 # print("เลขคู่") if number%2==0 else print("เลขคี่")
 
-# nested-loop
-for i in range(2):  # ลูปหลัก
-    print("รอบที่",i)
-    for j in range(3):  # ลูปภายใน
-      print(j)

@@ -14,5 +14,9 @@ if username == "member" and password == "1234" and ThaiID == "1234567890123" : #
 else:
     print("ไม่พบบัญชีผู้ใช้")
 
-
+# nested-loop
+for i in range(2):  # ลูปหลัก
+    print("รอบที่",i)
+    for j in range(3):  # ลูปภายใน
+      print(j)
 
