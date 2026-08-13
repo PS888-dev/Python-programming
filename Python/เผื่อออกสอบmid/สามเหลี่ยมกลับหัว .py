@@ -7,6 +7,6 @@
 '''
 n = 5
 i = 1
-while i <=n:
+while i <= n:
     print("*"*(n-i+1))
     n -= 1

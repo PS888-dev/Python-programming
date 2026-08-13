@@ -21,7 +21,6 @@
 #     print("ข้อมูลไม่ถูกต้อง") 
     
 # ternary operator if else แบบลดรูป
-# number= int(input("กรุณาป้อนตัวเลขของคุณ:"))
-# print("ตัวเลขของคุณ คือ ",number)
-# print("เลขคู่") if number%2==0 else print("เลขคี่")
-
+number= int(input("กรุณาป้อนตัวเลขของคุณ:"))
+print("ตัวเลขของคุณ คือ ",number)
+print("เลขคู่") if number%2==0 else print("เลขคี่")

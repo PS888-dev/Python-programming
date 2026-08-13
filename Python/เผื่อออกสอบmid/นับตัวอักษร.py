@@ -1,11 +1,17 @@
 '''
 นับตัวอักษร
 Input
- Banana
+ KMUTNB KMITL KMUTT
 Output
-B 1 
-a 3 
-n 2 
+K 3
+M 3
+U 2
+T 4
+N 1
+B 1
+  2
+I 1
+L 1
 '''
 text = "KMUTNB KMITL KMUTT"
 count = {}
