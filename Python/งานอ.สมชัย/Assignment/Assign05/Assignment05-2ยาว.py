@@ -20,6 +20,7 @@ if member == "y":
     
     print(f"{bar1}\nส่วนรถที่ได้รับรวม:{discount3:.1f}% ({Total_discount:,.2f})")
     print(f"จำนวนเงินที่ต้องจ่ายจริง: {value - Total_discount:,.2f}\n{bar1}")
+    
     Amount_received = int(input("จำนวนเงินที่ได้รับมา (บาท): "))
     print()
     print(f"{bar2}\n     สรุปการชำระเงิน\n{bar2}") #Fix
@@ -42,6 +43,7 @@ elif member == "n":
     
     print(f"{bar1}\nส่วนลดที่ได้รับรวม: {discount1:.1f}% ({Product_discount:,.2f} บาท)")
     print(f"จำนวนเงินที่ต้องจ่ายจริง: {value - Product_discount:,.2f} บาท\n{bar1}")
+    
     Amount_received = int(input("จำนวนเงินที่ได้รับมา (บาท): "))
     print()
     print(f"{bar2}\n      สรุปการชำระเงิน\n{bar2}") #Fix
