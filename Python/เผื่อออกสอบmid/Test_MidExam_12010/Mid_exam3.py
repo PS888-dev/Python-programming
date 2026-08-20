@@ -1,12 +1,14 @@
 # # นายพศวีร์ จินดาประเสริฐ 6906021612010
 
+title = "| No. |       Name Subject        | Socre | Grade | Level | Credit | Point |"
 report = (f"{" "*30}Report Grade")
-bar = (f"{"="*76}")
-title = (f"| No. |{" "*7}Name Subject{" "*7} | Socre | Grade | Level | Credit | Point |")
+bar = "="*len(title)
+# bar = (f"{"="*76}")
+# title = (f"| No. |{" "*7}Name Subject{" "*7} | Socre | Grade | Level | Credit | Point |")
 total_point = 0
 total_credit = 0
 total_all =""
-for i in range(5):
+for i in range(1):
     subject,score,credit = input("วิชา: "),int(input("คะเเนน : ")),int(input("หน่วยกิต : "))
     
     if score >= 80 and score <= 100 :grade, level = ("A"), 4.0
