@@ -1,4 +1,5 @@
 # นายพศวีร์ จินดาประเสริฐ 6906021612010
+
 print(f"Input Data:")
 report = (f"{" "*30}Grade Report")
 bar = (f"{"="*64}")
@@ -18,7 +19,7 @@ for i in range(1,6):
     elif score >= 50: grade, level = "D", 1.0
     else: grade, level = "F", 0
     
-    point = level * credit          # point ของวิชานี้ ใช้ print ในตาราง
+    point = level * credit
     total_point += point            # บวกสะสมคะแนนรวม
     total_credit += credit          # บวกสะสมหน่วยกิตรวม
     total_all += f"  {i:<6} {subject:<21}  {score:<5.1f}   {grade:>3}      {credit:^5}   {int(point):>6} \n"
@@ -27,7 +28,6 @@ total_all += f"{bar}\nGrade Point Average (GPA) :  {total_point/total_credit:.2f
 
 print(f"{report}\n{bar}\n{title}\n{bar}")
 print(total_all)
-
 
 
 # print(len("Sub No. Subject           Name   Mark   Grade   Credits   Points"))

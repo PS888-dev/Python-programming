@@ -1,10 +1,12 @@
 bar = "="*15
 print(f"{bar}\n|  Main Menu  |\n{bar}")
-print(f''' 1.  Triangle 1
- 2.  Triangle 2
- 3.  Triangle 3
- 4.  Triangle 4
- 5.  Exit''')
+print(f''' 
+1.  Triangle 1
+2.  Triangle 2
+3.  Triangle 3
+4.  Triangle 4
+5.  Exit
+ ''')
 
 
 choice = input("Enter Choice : ")
