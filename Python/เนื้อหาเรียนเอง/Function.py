@@ -54,7 +54,9 @@
 
 # def getPI():
 #     return 3.14
+
 # area = PI * radius ^2
+
 # radius=5
 # area= getPI()*radius**2
 # print("พื้นที่ลงกลม =", area, "ตารางเมตร")
@@ -64,27 +66,27 @@
 
 
 # para + return function
-def checkNumber(number):
-    if number%2==0:
-        return "เลขคู่"
-    else:
-        return "เลขคี่"
+# def checkNumber(number):
+#     if number%2==0:
+#         return "เลขคู่"
+#     else:
+#         return "เลขคี่"
     
-def summation(*data):
-    total=0
-    for item in data:
-        total+= item
-    return total
+# def summation(*data):  #args
+#     total=0
+#     for item in data:
+#         total+= item
+#     return total
     
 # result= checkNumber(10)
 # print("ผลลัพธ์ =", result)
-print(summation(10,20))
-print(summation(10,20,30))
+# print(summation(10,20))
+# print(summation(10,20,30))
 
 
 #Lambda fuction สั้นกระชับ
-# result= lambda base,n: base**n
-# print("ผลลัพธ์", result(2,3))
+result= lambda base,n: base**n
+print("ผลลัพธ์", result(2,3))
 
 
 #ขอบเขตตัวแปร Variable scop and return keyword
