@@ -8,7 +8,7 @@ bar = "="*len(title)
 total_point = 0
 total_credit = 0
 total_all =""
-for i in range(1):
+for i in range(5):
     subject,score,credit = input("วิชา: "),int(input("คะเเนน : ")),int(input("หน่วยกิต : "))
     
     if score >= 80 and score <= 100 :grade, level = ("A"), 4.0

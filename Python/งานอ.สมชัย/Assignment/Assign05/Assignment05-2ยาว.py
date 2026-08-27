@@ -18,14 +18,14 @@ if member == "y":
     Total_discount = Member_Discount + Product_discount
     Total_value = value - Total_discount
     
-    print(f"{bar1}\nส่วนรถที่ได้รับรวม:{discount3:.1f}% ({Total_discount:,.2f})")
-    print(f"จำนวนเงินที่ต้องจ่ายจริง: {value - Total_discount:,.2f}\n{bar1}")
+    print(f"{bar1}\nส่วนรถที่ได้รับรวม:{discount3:.1f}% ({Total_discount:,.2f} บาท)")
+    print(f"จำนวนเงินที่ต้องจ่ายจริง: {value - Total_discount:,.2f} บาท\n{bar1}")
     
     Amount_received = int(input("จำนวนเงินที่ได้รับมา (บาท): "))
     print()
-    print(f"{bar2}\n     สรุปการชำระเงิน\n{bar2}") #Fix
-    print(f"ราคารวมสินค้า   : {value:.2f}\nส่วนลดตามยอดซื้อ ({discount1:.1f})%: {Product_discount:.2f} บาท")
-    print(f"ส่วนลดสามชิก  {discount2:.1f}%:  {Member_Discount}\nส่วนลดทั้งหมด :  {discount3:.2f} บาท\n{bar1}")
+    print(f"{bar2}\n         สรุปการชำระเงิน\n{bar2}") 
+    print(f"ราคารวมสินค้า   : {value:.2f}\nส่วนลดตามยอดซื้อ ({discount1:.1f})%: {Product_discount:,.2f} บาท")
+    print(f"ส่วนลดสามชิก  {discount2:.1f}%:  {Member_Discount:,.2f} บาท\nส่วนลดทั้งหมด :  {discount3:,.2f} บาท\n{bar1}")
     print(f"ยอดเงินที่ต้องจ่ายจริง :  {Total_value:,.2f} บาท")
     print(f"จำนวนเงินที่ได้รับมา :  {Amount_received:,.2f} บาท")
     print(f"จำนวนเงินทอน     :     {Amount_received - Total_value:,.2f} บาท\n{bar2}")
@@ -46,8 +46,8 @@ elif member == "n":
     
     Amount_received = int(input("จำนวนเงินที่ได้รับมา (บาท): "))
     print()
-    print(f"{bar2}\n      สรุปการชำระเงิน\n{bar2}") #Fix
-    print(f"ราคารวมสินค้า   : {value:.2f}\nส่วนลดตามยอดซื้อ ({discount1:.1f})%: {Product_discount:.2f} บาท")
+    print(f"{bar2}\n         สรุปการชำระเงิน\n{bar2}") 
+    print(f"ราคารวมสินค้า   : {value:.2f}\nส่วนลดตามยอดซื้อ ({discount1:,.1f})%: {Product_discount:,.2f} บาท")
     print(f"ส่วนลดสามชิก  (0.0%):  0.00 บาท\nส่วนลดทั้งหมด :  {Product_discount:,.2f} บาท\n{bar1}")
     print(f"ยอดเงินที่ต้องจ่ายจริง :  {Total_value:,.2f} บาท")
     print(f"จำนวนเงินที่ได้รับมา :  {Amount_received:,.2f} บาท")

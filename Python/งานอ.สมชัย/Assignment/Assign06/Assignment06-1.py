@@ -23,8 +23,8 @@ for i in range(1,6):
     total_point += point            # บวกสะสมคะแนนรวม
     total_credit += credit          # บวกสะสมหน่วยกิตรวม
     total_all += f"  {i:<6} {subject:<21}  {score:<5.1f}   {grade:>3}      {credit:^5}   {int(point):>6} \n"
-total_all += f"{bar}\n {"Total":>36}  {int(total_point):>13}{int(total_credit):>11}\n"
-total_all += f"{bar}\nGrade Point Average (GPA) :  {total_point/total_credit:.2f}"
+total_all += f"{bar}\n {"Total":>36}    {int(total_credit):>11}{int(total_point):>11}\n"
+total_all += f"Grade Point Average (GPA) : {total_point/total_credit:.2f}"
 
 print(f"{report}\n{bar}\n{title}\n{bar}")
 print(total_all)
