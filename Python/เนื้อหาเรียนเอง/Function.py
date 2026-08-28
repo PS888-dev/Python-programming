@@ -21,7 +21,8 @@
 # sayHello(myTime,"คุณปุ้น",18)
 # showTable(2)
 
-#argument args ใช้ * เป็นแบบลำดับ ไม่จำเป็นต้องใช้ชื่อargs อยู่ในรูปแบบtuple จำลำดับ0,1 , kwargs ใช้ ** เป็นแบบกำหนดชื่อ ไม่จำเป็นต้องใช้ชื่อlkwargs อยู๋ในรูปแบบdictionary ใช้keysแทน
+#argument args ใช้ * เป็นแบบลำดับ ไม่จำเป็นต้องใช้ชื่อargs อยู่ในรูปแบบtuple จำลำดับ0,1 
+#kwargs ใช้ ** เป็นแบบกำหนดชื่อ ไม่จำเป็นต้องใช้ชื่อlkwargs อยู๋ในรูปแบบdictionary ใช้keysแทน
 # def saveEmployee(*args):
 #     print(f"ชื่อ{args[0]}, แผนก{args[1]}")
 #     print(f"เงินเดือน {args[2]} บาท")
