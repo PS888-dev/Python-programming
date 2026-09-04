@@ -86,23 +86,23 @@
 
 
 #Lambda fuction สั้นกระชับ
-result= lambda base,n: base**n
-print("ผลลัพธ์", result(2,3))
+# result= lambda base,n: base**n
+# print("ผลลัพธ์", result(2,3))
 
 
 #ขอบเขตตัวแปร Variable scop and return keyword
-# balance=1000 #global ทำงานนอกfuction 
-# def displaybalance():
-#     print("ยอดเงินคงเหลือในบัญชี", balance, "บาท")
+balance=1000 #global ทำงานนอกfuction 
+def displaybalance():
+    print("ยอดเงินคงเหลือในบัญชี", balance, "บาท")
 
-# def deposit(value): #value มีdeposit เป็นเจ้าของ ทำงานได้แค่ในนี้
-#     global balance #ต้องประกาศตัวแปร global เข้ามาในfuction ถึงจะใช้งานร่วมกันได้
-#     money=value
-#     print("ฝากเงินจำนวน",money, "บาท")
-#     if(money<=0 or money<100):
-#         print("ไม่สามารถฝากเงินได้")
-#         return #ตรงตามเงื่อนไขข้างบนจะกระโดดออกจากโค๊ดตัวล่าง
-#     balance+=money
+def deposit(value): #value มีdeposit เป็นเจ้าของ ทำงานได้แค่ในนี้
+    global balance #ต้องประกาศตัวแปร global เข้ามาในfuction ถึงจะใช้งานร่วมกันได้
+    money=value
+    print("ฝากเงินจำนวน",money, "บาท")
+    if(money<=0 or money<100):
+        print("ไม่สามารถฝากเงินได้")
+        return #ตรงตามเงื่อนไขข้างบนจะกระโดดออกจากโค๊ดตัวล่าง
+    balance+=money
    
 
 # def withdraw(value): #value มีwithdraw เป็นเจ้าของ ทำงานได้แค่ในนี้
@@ -116,9 +116,9 @@ print("ผลลัพธ์", result(2,3))
 #     balance-=amont
 
 # displaybalance()
-# deposit(100)
+deposit(100)
 # withdraw(900)
-# displaybalance()
+displaybalance()
 
 #Exception try คือ ลองทำคำสั่งในนี้ except คือ ถ้าเกิดข้อผิดพลาดจะมาทำงานตรงนี้ finally คือ คำสั่งต่างๆ
 # try:
