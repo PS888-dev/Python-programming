@@ -23,7 +23,7 @@
 # print(colors)
 # print(number)
 # colors.append("น้ำตาล") #เพิ่มสมาชิกใน list ตัวเดียว
-# colors.extend(["ส้ม","เหลือง",]) #เพิ่มสมาชิกใน list แบบหลายตัว
+# colors.extend(["ส้ม","เหลือง",]) #เพิ่มสมาชิกใน list แบบหลายตัว ต่อท้าย
 # colors.insert(1,"เทา") #เพิ่มสมาชิกใน list แบบระบุตำแหน่ง
 # colors.remove("น้ำเงิน") #ลบสมาชิกใน list แบบระบุชื่อ
 # colors.clear()  #ลบสมาชิกใน list แบบลบทั้งหมด
@@ -32,19 +32,19 @@
 # tuple ไม่สามารถเเก้ไขข้อมูลได้
 # product=("กางเกง",150.0,10)
 # name,price,stock, = product
-# # print(type(product))
+# print(type(product))
 # print(name)
 # print(price)
 # print(stock)
 
-# colors = ("เเดง","เขียว","น้ำเงิน","ดำ","ขาว")
-# colors2 =tuple(("ดำ","ขาว"))
+colors = ("เเดง","เขียว","น้ำเงิน","ดำ","ขาว")
+colors2 =tuple(("ดำ","ขาว"))
 
-# fullcolors=colors1+colors2
+fullcolors=colors+colors2
 # print(type(fullcolors))
 # print(fullcolors)
 # print(colors[0:])
-# print(colors.index("ดำ")) #หาข้อมูลสมาชิกในข้อมูล
+print(colors.index("ดำ")) #หาข้อมูลสมาชิกในข้อมูล
 # print(colors.count("เเดง")) #หาว่ามีข้อมูลกี่ตัว
 
 # # set ต้องมีต่าไม่ซ้ำกัน มีลำดับไม่ชัดเจน
@@ -63,11 +63,11 @@
 # print(data)
 
 #dictionary
-colors={
-    "red":"เเดง", #ข้างหน้าคือkey ข้างหลังคือ value
-    "green":"เขียว",
-    "blue":"น้ำเงิน"
-}
+# colors={
+#     "red":"เเดง", #ข้างหน้าคือkey ข้างหลังคือ value
+#     "green":"เขียว",
+#     "blue":"น้ำเงิน"
+# }
 # print(colors.keys()) #ดูว่าใน Dictionary มี คีย์ (Key) อะไรบ้าง
 # print(colors.values()) #ดึง ค่าของข้อมูล (Value) ออกมา โดยไม่แสดงชื่อkey
 # print(colors.items()) #ดึง ค่าของข้อมูล มาทั้งคู่
