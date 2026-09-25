@@ -1,7 +1,7 @@
 from random import randint
 
 student = int(input("Enter number of student : "))
-subject = int(input("Enter number of student : "))
+subject = int(input("Enter number of subject : "))
 
 scores = []
 

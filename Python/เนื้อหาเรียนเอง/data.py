@@ -73,7 +73,9 @@ print(colors.index("ดำ")) #หาข้อมูลสมาชิกใน�
 # print(colors.items()) #ดึง ค่าของข้อมูล มาทั้งคู่
 # print(colors["red"]) #ใช้สำหรับ ดึงค่าจากคีย์ same
 # print(colors.get("red")) #ใช้สำหรับ ดึงค่าจากคีย์ same
-# colors.pop("blue") #ต้องการลบkeyที่จะลบทิ้ง ลบข้อมูลที่ละรายการ
+# print(colors.get("black,"not found")) #ใช้สำหรับ ดึงค่าจากคีย์ ถ้าไม่มีให้ขึ้น not found
+# colors.pop("blue") #ต้องการลบkeyที่จะลบทิ้ง ลบข้อมูลทีละรายการ เเสดงผลลัพธ์ออกมา
+# colors.popitem("blue") #ต้องการลบkey,valueที่จะลบทิ้ง ลบข้อมูลทีละรายการ เเสดงผลลัพธ์ออกมา
 # colors.clear() #ลบข้อมูลทั้งหมดของ colors
 # print(colors)
 # maincolor=colors.copy() # การcopyจากอีกที่นึง
