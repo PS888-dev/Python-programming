@@ -91,18 +91,18 @@
 
 
 #ขอบเขตตัวแปร Variable scop and return keyword
-balance=1000 #global ทำงานนอกfuction 
-def displaybalance():
-    print("ยอดเงินคงเหลือในบัญชี", balance, "บาท")
+# balance=1000 #global ทำงานนอกfuction 
+# def displaybalance():
+#     print("ยอดเงินคงเหลือในบัญชี", balance, "บาท")
 
-def deposit(value): #value มีdeposit เป็นเจ้าของ ทำงานได้แค่ในนี้
-    global balance #ต้องประกาศตัวแปร global เข้ามาในfuction ถึงจะใช้งานร่วมกันได้
-    money=value
-    print("ฝากเงินจำนวน",money, "บาท")
-    if(money<=0 or money<100):
-        print("ไม่สามารถฝากเงินได้")
-        return #ตรงตามเงื่อนไขข้างบนจะกระโดดออกจากโค๊ดตัวล่าง
-    balance+=money
+# def deposit(value): #value มีdeposit เป็นเจ้าของ ทำงานได้แค่ในนี้
+#     global balance #ต้องประกาศตัวแปร global เข้ามาในfuction ถึงจะใช้งานร่วมกันได้
+#     money=value
+#     print("ฝากเงินจำนวน",money, "บาท")
+#     if(money<=0 or money<100):
+#         print("ไม่สามารถฝากเงินได้")
+#         return #ตรงตามเงื่อนไขข้างบนจะกระโดดออกจากโค๊ดตัวล่าง
+#     balance+=money
    
 
 # def withdraw(value): #value มีwithdraw เป็นเจ้าของ ทำงานได้แค่ในนี้
@@ -116,9 +116,9 @@ def deposit(value): #value มีdeposit เป็นเจ้าของ ท�
 #     balance-=amont
 
 # displaybalance()
-deposit(100)
-# withdraw(900)
-displaybalance()
+# deposit(-100)
+# withdraw(600)
+# displaybalance()
 
 #Exception try คือ ลองทำคำสั่งในนี้ except คือ ถ้าเกิดข้อผิดพลาดจะมาทำงานตรงนี้ finally คือ คำสั่งต่างๆ
 # try:
@@ -138,5 +138,3 @@ displaybalance()
 #     print("------------")
 #     print("End Program")
 #     print("------------")
-
-
