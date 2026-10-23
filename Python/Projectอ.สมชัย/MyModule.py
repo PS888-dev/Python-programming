@@ -7,6 +7,14 @@ def add_product(stock):
     prod_name = input("Input product name : ")
     prod_price = input("Input product price : ")
     prod_qty = input("Input product quantity : ")
+    
+    try:
+        float(prod_price)
+        int(prod_qty)
+    except ValueError:
+        print("Price and quantity must be numbers.\n")
+        return
+    
     try:
         with open(stock, "a", encoding="UTF_8") as fout:
             fout.write(day + "," + prod_name + "," + prod_price + "," + prod_qty + "\n")
