@@ -1,6 +1,5 @@
 # Filename : ModuleEmployee.py
 
-
 def add_employee(filename):
     print('Enter data employee.')
     emp_id = input('Input employee id : ').strip()

@@ -9,11 +9,10 @@ def main():
         if choice == "1" : add_product(PRODUCTFILE)
         elif choice == "2" : report_from_file(PRODUCTFILE)
         elif choice == "3" :
-            product = read_product(PRODUCTFILE)
-            report_product(product)
+            products = read_product(PRODUCTFILE)
+            report_product(products)
         elif choice == "4": break
         else:print("No choice, input again.")
     print("Exit Program")
 if __name__ == "__main__":
     main()
-    
