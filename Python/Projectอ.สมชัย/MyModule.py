@@ -15,6 +15,15 @@ def add_product(stock):
     else:
         print("Save Data Product already.\n")
 
+        total_now = float(prod_price) * int(prod_qty)
+        print("-" * 40)
+        print(f"Added on {day}")
+        print(f"Product  : {prod_name}")
+        print(f"Quantity : {int(prod_qty)}")
+        print(f"Price    : {float(prod_price):.2f} baht per piece")
+        print(f"Total    : {total_now:.2f} baht")
+        print("-" * 40 + "\n")
+
         # รวมสินค้าชื่อเดียวกันของวันนั้น
         items = {}
         with open(stock, "r", encoding="UTF_8") as fin:
